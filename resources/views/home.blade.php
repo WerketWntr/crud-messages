@@ -11,7 +11,7 @@
         <!-- Form -->
         <div class="card bg-base-100 shadow mt-8">
             <div class="card-body">
-                <form method="POST" action="/message">
+                <form method="POST" action="{{ route('messages.store') }}">
                     @csrf
                     <div class="form-control w-full">
                         <textarea
